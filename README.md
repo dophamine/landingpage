@@ -1,1 +1,3 @@
-# landingpage "Rostok"
+# landingpage "Rostok" 
+
+(static version)
