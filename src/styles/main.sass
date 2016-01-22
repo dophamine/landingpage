@@ -1,0 +1,323 @@
+@import "bourbon/bourbon"
+@import "skins/camomile"
+@import "fonts"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px !important
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	padding: 0
+	margin: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+a
+	text-decoration: none
+	&:link
+		outline: none
+
+.hidden
+	display: none
+
+img:not([class='logo-img'])
+	width: 100%
+
+// preloader
+#loader 
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+#loader_inner
+	background-image: url("../images/preloader.gif")
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 100px
+	width: 100px
+	margin-top: -50px
+	margin-left: -50px
+	left: 50%
+	top: 50%
+	position: absolute
+	opacity: .7
+
+// navigator
+.navigator
+	display: none
+	position: fixed
+	top: 50%
+	right: 1.5%
+	z-index: 200
+	+transform(translateY(-50%))
+	.navigator-wrap
+		width: 40px
+	.jumper
+		display: block
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		margin: 30px auto
+		transition: all .3s ease-in
+		opacity: .5
+		position: relative
+		&:hover
+			+transform(scale(1.4))
+			opacity: .9
+	&:hover .jumper
+		+transform(scale(1.4))
+
+
+.page-title
+	width: 50%
+	text-align: center
+	font-family: 'LatoBold', sans-serif
+	font-size: 2.8571rem
+	margin: 20px auto 85px
+	padding-bottom: 10px
+	text-transform: uppercase
+	font-weight: normal
+
+.btn
+	display: block
+	font-family: 'LatoBlack', sans-serif
+	width: 100px
+	height: 36px
+	text-align: center
+	line-height: 36px
+	transition: all .2s ease-in
+
+.main #main_head
+	position: relative
+	min-height: 480px
+	overflow: hidden
+
+.arrow-wrap
+	position: absolute
+	bottom: 5%
+	left: 46.29355%
+	width: 50px
+	height: 150px
+	animation-delay: 1s
+	animation-duration: 2s
+	z-index: 1
+	.arrow
+		display: block
+		position: absolute
+		width: 34px
+		height: 34px
+		bottom: 12%
+		left: 50%
+		width: 34px
+		height: 34px
+		opacity: .6
+		+transform(translate(-17px,0) rotate(45deg))
+		transition: opacity .2s ease-in
+		&:hover
+			opacity: 1
+
+.navigation
+	position: relative
+	z-index: 2
+	height: 80px
+	
+	.logo
+		line-height: 80px
+	.nav-wrap
+		position: relative
+		float: right
+		z-index: 2
+	.nav-pills
+		list-style: none
+		margin: 0
+		height: 80px
+		li
+			display: inline-block
+			margin-right: 2em
+			line-height: 80px
+			list-style: none
+			a
+				display: block
+				position: relative
+				overflow: hidden
+				height: auto
+				padding: 0 10px
+				transition: all .3s ease-in
+				&:after, &:before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 1em
+					transition: left .2s ease-in
+					border-bottom: 1px solid #349b48
+					opacity: .5
+				&:before
+					top: 15%
+					left: 100%
+				&:after
+					top: 51%
+					left: -100%			
+			&:hover a:after, &:hover a:before
+				left: 0
+
+
+.main_heading_wrap
+	z-index: 1
+	position: absolute
+	top: 40%
+	left: 10%
+h1.main_heading
+	max-width: 380px
+	font-family: 'LatoBold', sans-serif
+	text-align: center
+	padding: 0 3rem
+	line-height: 1.125
+	font-size: 1.7rem
+	opacity: .83
+	font-weight: normal
+	span
+		display: inline-block
+		font-size: 2.9411em
+		padding-top: 1.4285rem
+		letter-spacing: .2rem
+	
+#proposal, #about, #garant, #contact
+	padding: 50px 0
+
+.product-container
+	text-align: center
+	font-size: 0
+
+.product
+	vertical-align: middle
+	display: inline-block
+	min-height: 360px
+	max-width: 30%
+	padding: 20px
+	box-shadow: 2px 2px 4px rgba(0,0,0,.1)
+	margin: 0 1% 30px
+	position: relative
+	font-size: 1.4rem
+	font-weight: 300
+	text-align: left
+	img
+		display: block
+		margin: 0 auto 20px
+		width: 100%
+		box-shadow: 2px 2px 5px rgba(0,0,0,.2)
+	p.descr
+		margin: 25px 5px 3rem
+		text-indent: 1.5em
+	hr
+		margin-bottom: 60px
+	.btn
+		position: absolute
+		bottom: 15px
+		right: 15px
+	.price
+		position: absolute
+		bottom: 18px
+		left: 15px
+		height: 30px
+		line-height: 30px
+		padding: 0 10px
+		font-size: 1.55rem
+		span
+			vertical-align: middle
+			display: inline
+			font-family: "LatoLightItalic"
+			strong
+				font-weight: normal
+		.price-number
+			font-family: "LatoRegular"
+			font-size: 1.35em
+			font-weight: 500
+			vertical-align: baseline
+
+.page .product
+	margin: 0 auto
+	max-width: 100%
+	display: block
+	padding: 40px
+	img
+		max-width: 50%
+		margin: 0 auto 50px
+	.title
+		font-size: 3.2rem
+		margin: 0 5px 30px
+	.descr
+		margin: 25px 35px 3rem
+		font-size: 1.2em
+
+.title
+	font-family: "LatoBold",sans-serif
+	font-size: 2rem
+	margin: 0 5px 15px
+	text-align: center
+	font-weight: normal
+	
+
+#about 
+	.descr
+		margin: 20px auto
+		font-family: 'LatoLightItalic', sans-serif
+		font-size: 1.8rem
+		text-align: center
+		strong
+			font-family: 'LatoItalic'
+	img.portrait
+		max-width: 250px
+		box-shadow: 2px 2px 8px rgba(0,0,0,.3)
+	p
+		width: 90%
+		text-indent: 2em
+		font-size: 1.6rem
+		text-align: justify
+		margin: 30px auto
+		font-weight: 300
+	.btn
+		margin: 0 auto
+		width: 140px
+	figure
+		width: 85%
+		margin: 0 auto 50px
+		text-align: center
+		iframe
+			width: 400px
+			height: 285px
+
+#contact
+	.page-title
+		margin-bottom: 70px
+.contact-info
+	text-align: center
+	font-size: 1.7rem
+	font-weight: 300
+	i
+		font-size: 1.5em
+	a
+		font-family: "Raleway"
+		vertical-align: middle
+footer
+	height: 80px
+	vertical-align: middle
+	p
+		height: 80px
+		margin: 0
+		padding: 30px 0
+
+@import "media"

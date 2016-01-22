@@ -1,0 +1,87 @@
+@media only screen and (max-width: 992px)
+	#proposal .product
+		min-width: 40%
+	h2.page-title
+		font-size: 2.5rem
+		width: 65%
+
+@media only screen and (max-width: 768px)
+	h1.main_heading
+		font-size: 1.5rem
+	.nav-pills a
+		padding: 0 5px !important
+	#proposal .product
+		max-width: 70%
+		min-width: 50%
+	h2.page-title
+		font-size: 2.3rem
+		width: 75%
+		margin-bottom: 45px
+	.navigator
+		display: block
+	.navigation
+		.nav-wrap
+			width: 80px
+			height: 80px
+			cursor: pointer
+			position: relative
+		.nav-btn
+			background: rgba(255, 255, 255, 0.8)
+			cursor: pointer
+			width: 80px
+			height: 80px
+			&:after
+				content: ''
+				position: absolute
+				width: 55%
+				height: 5px
+				background: #349b48
+				top: 23px
+				left: 23%
+				box-shadow: 0 12px 0 #349b48,0 24px 0 #349b48
+		.nav-pills
+			display: none
+			position: absolute
+			padding: 0
+			top: 100%
+			right: 0
+			height: auto
+			background: rgba(255, 255, 255, 0.9)
+			box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3)
+			li
+				display: block
+				margin-right: 0
+				line-height: 60px
+	.nav-pills a
+		width: 200px
+		text-align: center
+		letter-spacing: 1px
+		-webkit-transition: all .1s ease-in
+		transition: all .1s ease-in
+	#main_head .nav-pills a:hover
+		background: #349b48
+		color: #fafafa
+	.nav-pills a
+		&:after, &:before
+			display: none
+
+@media only screen and (max-width: 480px)
+	#about
+		iframe
+			width: 100% !important
+			height: 200px !important
+		figure
+			width: 95%
+	h1.main_heading
+		font-size: 1.2rem
+		padding-left: 0
+		padding-right: 0
+	#proposal .product
+		min-width: 50%
+		max-width: 95%
+		margin-bottom: 10px
+		padding: 4%
+	.product .title
+		font-size: 1.8rem
+	.navigator
+		visibility: hidden

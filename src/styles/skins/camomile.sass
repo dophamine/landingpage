@@ -1,0 +1,93 @@
+$main-bg: #2c8e69
+$sec-bg: #ebebec
+$btn-bg: #349b48
+$txt-d: #07201a
+$txt-c: #54786e
+$txt-c2: lighten(#edf3ee, 5%)
+$price-c: #BA1C00
+
+.page-title
+	color: $txt-c2
+	border-bottom: 3px solid $txt-c2
+
+.alter
+	color: $main-bg
+	border-bottom: 3px solid $main-bg
+
+a 
+	color: $txt-d
+body
+	background-image: linear-gradient(90deg, #32a177 10%, rgba(232, 210, 102, 0.48) 90%)
+
+// body.page
+// 	background-image: none
+
+.navigator
+	.jumper
+		border: 2px solid $btn-bg
+	.jumper.mPS2id-highlight-first
+		background-color: $main-bg
+
+.btn
+	border: 1px solid $btn-bg
+	background-color: $btn-bg
+	color: $txt-c2
+	&:hover
+		background-color: lighten($sec-bg, 10%)
+		color: saturate($btn-bg, 20%)
+
+.arrow
+	border-right: 4px solid $btn-bg
+	border-bottom: 4px solid $btn-bg
+
+#main_head
+	color: $txt-c
+	.navigation
+		background-color: rgba(255,255,255,.4)
+	.nav-pills 
+		a
+			color: darken($main-bg, 10%)
+			&:hover
+				color: $btn-bg
+			&:after, &:before
+					border-bottom: 1px solid $btn-bg
+	.main_heading
+		color: $txt-c
+
+.page #main_head
+	.navigation
+		background-color: rgba(255,255,255,.95)
+		box-shadow: 0 1px 7px rgba(0,0,0,.1)
+
+
+
+#proposal, #garant
+	background-color: lighten($main-bg, 5%)
+	background-image: linear-gradient(90deg, #32a177 10%, rgba(232, 210, 102, 0.78) 90%)
+#about, #contact
+	background-color: #FFF
+
+.product
+	background-color: lighten($sec-bg, 10%)
+.price
+	// border-left: 1px dotted $btn-bg
+	color: $btn-bg
+	.price-number
+		color: $price-c
+.title
+	color: $txt-c
+
+.contact-info
+	color: $btn-bg
+	a
+		color: $btn-bg
+
+footer
+	background-color: darken($main-bg, 10%)
+	background-image: linear-gradient(90deg, darken($main-bg, 10%) 10%, #71b280 90%)
+	color: $txt-c2
+	// linear-gradient(90deg, #134e5e 10%, #71b280 90%)
+.page footer
+	background: rgba(255,255,255,.85)
+	color: $txt-c
+	box-shadow: 0 -1px 7px rgba(0,0,0,.1)
