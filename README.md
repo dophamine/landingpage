@@ -3,4 +3,4 @@
 (static version)
 
 Адаптивный landing-page. 
-Технологии: SASS, Js, Jquery
+Технологии: SASS, Js, Jquery, Photoshop
